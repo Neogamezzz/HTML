@@ -1,3 +1,7 @@
+:root {
+  --indigo: #0f5640a4;
+}
+
 .units {
   width: 1920px;
   height: 1080px;
@@ -7,7 +11,7 @@
 }
 
 body {
-  color: green;
+  background-color: var(--indigo);
 }
 
 .menu {
@@ -16,6 +20,19 @@ body {
   display: flex;
 }
 
-.text * { top: calc(1em+ 2.0em) }
+.text * {
+  top: calc(1em+ 2em);
+}
 
-a{}
+.box {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 50%;
+  background: #fff;
+  border-radius: 25rem;
+  color: #ff0000;
+  font-size: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
