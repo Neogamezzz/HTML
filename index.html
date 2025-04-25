@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My first page</title>
+  </head>
+  <body>
+    <div class="register">
+      <form class="form" action="https://formspree.io/f/xovdaarl" method="post">
+        <div class="form__title">Register a new account</div>
+
+        <div class="form__group">
+          <label class="form__label" for="email">Your e-mail address *:</label>
+          <input
+            class="form__input"
+            type="text"
+            placeholder="Your e-mail address"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="password">Create a password *:</label>
+          <input
+            class="form__input"
+            type="password"
+            placeholder="Create a password"
+            id="password"
+            name="password"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="repeat-password"
+            >Repeat your password *:</label
+          >
+          <input
+            class="form__input"
+            type="password"
+            placeholder="Repeat your password"
+            id="repeat-password"
+            name="repeat-password"
+            required
+          />
+        </div>
+
+        <button class="form__button" type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
